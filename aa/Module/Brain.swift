@@ -1,39 +1,35 @@
 //
-//  fourViewController.swift
-//  aa
+//  Brain.swift
+//  DnD Roll
 //
-//  Created by Andrea Bottino on 19/02/2023.
+//  Created by Andrea Bottino on 22/03/2023.
 //
 
+import Foundation
 import UIKit
+import AVFoundation
 
-class fourViewController: UIViewController {
+
+struct DndMaster {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "D4"
-    }
-    
-    @IBOutlet weak var luckyres: UIImageView!
-    
-    
-    @IBOutlet weak var rollResult: UIImageView!
+    var player: AVAudioPlayer!
     
     let results = [#imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "3"), #imageLiteral(resourceName: "4"), #imageLiteral(resourceName: "5"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "7"), #imageLiteral(resourceName: "8"), #imageLiteral(resourceName: "9"), #imageLiteral(resourceName: "10"), #imageLiteral(resourceName: "11"), #imageLiteral(resourceName: "12"), #imageLiteral(resourceName: "13"), #imageLiteral(resourceName: "14"), #imageLiteral(resourceName: "15"), #imageLiteral(resourceName: "16"), #imageLiteral(resourceName: "17"), #imageLiteral(resourceName: "18"), #imageLiteral(resourceName: "19"), #imageLiteral(resourceName: "20")]
     
-    let vibration = UINotificationFeedbackGenerator()
-    
-    @IBAction func rollDice(_ sender: UIButton) {
-        
-        sender.alpha = 0.5
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-        sender.alpha = 1
-        }
-        
-        self.vibration.notificationOccurred(.success)
-        
-        rollResult.image = results[Int.random(in: 0...3)]
-        
+    mutating func playSoundHappy() {
+        let url = Bundle.main.url(forResource: "happy", withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
     }
     
+    mutating func playSoundSad() {
+        let url = Bundle.main.url(forResource: "sad", withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+    }
+    
+    func genRandom(useRange: ClosedRange<Int>) -> UIImage {
+        let randomRes = results[Int.random(in: useRange)]
+        return randomRes
+    }
 }
