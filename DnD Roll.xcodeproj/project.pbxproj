@@ -13,6 +13,7 @@
 		6258D2E62C66AD2C000F202C /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6258D2E52C66AD2C000F202C /* AudioPlayer.swift */; };
 		6258D2E82C66B135000F202C /* DieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6258D2E72C66B135000F202C /* DieModel.swift */; };
 		6258D2EA2C66B8AC000F202C /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6258D2E92C66B8AC000F202C /* HomeScreenModel.swift */; };
+		6258D2F32C66BEB9000F202C /* HomeScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6258D2F22C66BEB9000F202C /* HomeScreenTests.swift */; };
 		629377E929A19830003DD3F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629377E829A19830003DD3F3 /* AppDelegate.swift */; };
 		629377EB29A19830003DD3F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629377EA29A19830003DD3F3 /* SceneDelegate.swift */; };
 		629377F029A19830003DD3F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629377EE29A19830003DD3F3 /* Main.storyboard */; };
@@ -23,6 +24,23 @@
 		62F85F0C29CB7C7900207C72 /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F85F0B29CB7C7900207C72 /* AllViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6258D2F42C66BEB9000F202C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629377DD29A19830003DD3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629377E429A19830003DD3F3;
+			remoteInfo = "DnD Roll";
+		};
+		6258D3012C66C30B000F202C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629377DD29A19830003DD3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629377E429A19830003DD3F3;
+			remoteInfo = "DnD Roll";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		62286EBE29C8FF40004F2CCD /* sad.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sad.wav; path = sounds/sad.wav; sourceTree = SOURCE_ROOT; };
 		62286EC029C9ABE7004F2CCD /* happy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = happy.wav; path = sounds/happy.wav; sourceTree = SOURCE_ROOT; };
@@ -30,6 +48,9 @@
 		6258D2E52C66AD2C000F202C /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		6258D2E72C66B135000F202C /* DieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieModel.swift; sourceTree = "<group>"; };
 		6258D2E92C66B8AC000F202C /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
+		6258D2F02C66BEB9000F202C /* DndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6258D2F22C66BEB9000F202C /* HomeScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTests.swift; sourceTree = "<group>"; };
+		6258D2FD2C66C30B000F202C /* uuu.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uuu.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		629377E529A19830003DD3F3 /* DnD Roll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DnD Roll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		629377E829A19830003DD3F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		629377EA29A19830003DD3F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +64,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6258D2ED2C66BEB9000F202C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6258D2FA2C66C30B000F202C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		629377E229A19830003DD3F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,10 +100,19 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		6258D2F12C66BEB9000F202C /* DndTests */ = {
+			isa = PBXGroup;
+			children = (
+				6258D2F22C66BEB9000F202C /* HomeScreenTests.swift */,
+			);
+			path = DndTests;
+			sourceTree = "<group>";
+		};
 		629377DC29A19830003DD3F3 = {
 			isa = PBXGroup;
 			children = (
 				629377E729A19830003DD3F3 /* aa */,
+				6258D2F12C66BEB9000F202C /* DndTests */,
 				629377E629A19830003DD3F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				629377E529A19830003DD3F3 /* DnD Roll.app */,
+				6258D2F02C66BEB9000F202C /* DndTests.xctest */,
+				6258D2FD2C66C30B000F202C /* uuu.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +173,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6258D2EF2C66BEB9000F202C /* DndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6258D2F82C66BEB9000F202C /* Build configuration list for PBXNativeTarget "DndTests" */;
+			buildPhases = (
+				6258D2EC2C66BEB9000F202C /* Sources */,
+				6258D2ED2C66BEB9000F202C /* Frameworks */,
+				6258D2EE2C66BEB9000F202C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6258D2F52C66BEB9000F202C /* PBXTargetDependency */,
+			);
+			name = DndTests;
+			productName = DndTests;
+			productReference = 6258D2F02C66BEB9000F202C /* DndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6258D2FC2C66C30B000F202C /* uuu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6258D3032C66C30B000F202C /* Build configuration list for PBXNativeTarget "uuu" */;
+			buildPhases = (
+				6258D2F92C66C30B000F202C /* Sources */,
+				6258D2FA2C66C30B000F202C /* Frameworks */,
+				6258D2FB2C66C30B000F202C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6258D3022C66C30B000F202C /* PBXTargetDependency */,
+			);
+			name = uuu;
+			productName = uuu;
+			productReference = 6258D2FD2C66C30B000F202C /* uuu.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		629377E429A19830003DD3F3 /* DnD Roll */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 629377F929A19832003DD3F3 /* Build configuration list for PBXNativeTarget "DnD Roll" */;
@@ -151,9 +233,17 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					6258D2EF2C66BEB9000F202C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 629377E429A19830003DD3F3;
+					};
+					6258D2FC2C66C30B000F202C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 629377E429A19830003DD3F3;
+					};
 					629377E429A19830003DD3F3 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -173,11 +263,27 @@
 			projectRoot = "";
 			targets = (
 				629377E429A19830003DD3F3 /* DnD Roll */,
+				6258D2EF2C66BEB9000F202C /* DndTests */,
+				6258D2FC2C66C30B000F202C /* uuu */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6258D2EE2C66BEB9000F202C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6258D2FB2C66C30B000F202C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		629377E329A19830003DD3F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +299,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6258D2EC2C66BEB9000F202C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6258D2F32C66BEB9000F202C /* HomeScreenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6258D2F92C66C30B000F202C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		629377E129A19830003DD3F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +331,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6258D2F52C66BEB9000F202C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629377E429A19830003DD3F3 /* DnD Roll */;
+			targetProxy = 6258D2F42C66BEB9000F202C /* PBXContainerItemProxy */;
+		};
+		6258D3022C66C30B000F202C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629377E429A19830003DD3F3 /* DnD Roll */;
+			targetProxy = 6258D3012C66C30B000F202C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		629377EE29A19830003DD3F3 /* Main.storyboard */ = {
@@ -231,6 +365,100 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6258D2F62C66BEB9000F202C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L52JR8SNCR;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndreaBottino.DndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DnD Roll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DnD Roll";
+			};
+			name = Debug;
+		};
+		6258D2F72C66BEB9000F202C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L52JR8SNCR;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndreaBottino.DndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DnD Roll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DnD Roll";
+			};
+			name = Release;
+		};
+		6258D3042C66C30B000F202C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L52JR8SNCR;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndreaBottino.uuu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DnD Roll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DnD Roll";
+			};
+			name = Debug;
+		};
+		6258D3052C66C30B000F202C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L52JR8SNCR;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndreaBottino.uuu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DnD Roll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DnD Roll";
+			};
+			name = Release;
+		};
 		629377F729A19832003DD3F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +630,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6258D2F82C66BEB9000F202C /* Build configuration list for PBXNativeTarget "DndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6258D2F62C66BEB9000F202C /* Debug */,
+				6258D2F72C66BEB9000F202C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6258D3032C66C30B000F202C /* Build configuration list for PBXNativeTarget "uuu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6258D3042C66C30B000F202C /* Debug */,
+				6258D3052C66C30B000F202C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		629377E029A19830003DD3F3 /* Build configuration list for PBXProject "DnD Roll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
