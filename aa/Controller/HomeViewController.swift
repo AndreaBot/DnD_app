@@ -7,7 +7,7 @@
 
 import UIKit
 
-class homeViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet var allButtons: [UIButton]!
     
