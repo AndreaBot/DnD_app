@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EpM-Ts-leg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EpM-Ts-leg">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -163,12 +164,12 @@
                         <barButtonItem key="backBarButtonItem" title="   " id="qyF-ii-0PN"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="d10Button" destination="qWh-4R-lmf" id="oBb-jH-5bv"/>
-                        <outlet property="d12Button" destination="Ijb-FO-AHN" id="Kci-1Z-ATN"/>
-                        <outlet property="d20Button" destination="1dn-YY-xax" id="W1I-3Q-wiQ"/>
-                        <outlet property="d4Button" destination="FgW-fc-VfN" id="2TG-yw-X7n"/>
-                        <outlet property="d6Button" destination="VuQ-ou-pfO" id="RB0-1k-aQS"/>
-                        <outlet property="d8Button" destination="bYi-Z6-uE5" id="d6V-TJ-FAX"/>
+                        <outletCollection property="allButtons" destination="FgW-fc-VfN" collectionClass="NSMutableArray" id="RKl-Om-Bfr"/>
+                        <outletCollection property="allButtons" destination="VuQ-ou-pfO" collectionClass="NSMutableArray" id="d4f-Ds-6Gw"/>
+                        <outletCollection property="allButtons" destination="bYi-Z6-uE5" collectionClass="NSMutableArray" id="Fdd-0T-pqv"/>
+                        <outletCollection property="allButtons" destination="qWh-4R-lmf" collectionClass="NSMutableArray" id="xEz-xw-i4A"/>
+                        <outletCollection property="allButtons" destination="Ijb-FO-AHN" collectionClass="NSMutableArray" id="WYM-tf-XZR"/>
+                        <outletCollection property="allButtons" destination="1dn-YY-xax" collectionClass="NSMutableArray" id="BL5-75-yPa"/>
                         <segue destination="arS-Fq-OXO" kind="show" identifier="goToDie" id="0ua-5P-1am"/>
                     </connections>
                 </viewController>
@@ -271,10 +272,10 @@
         <image name="D6" width="156.66667175292969" height="149"/>
         <image name="D8" width="159" height="153.66667175292969"/>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

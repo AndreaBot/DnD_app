@@ -9,62 +9,59 @@ import UIKit
 
 class homeViewController: UIViewController {
 
-    @IBOutlet weak var d4Button: UIButton!
-    @IBOutlet weak var d6Button: UIButton!
-    @IBOutlet weak var d8Button: UIButton!
-    @IBOutlet weak var d10Button: UIButton!
-    @IBOutlet weak var d12Button: UIButton!
-    @IBOutlet weak var d20Button: UIButton!
+    @IBOutlet var allButtons: [UIButton]!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Home"
-        d4Button.titleLabel!.layer.opacity = 0.0
-        d6Button.titleLabel!.layer.opacity = 0.0
-        d8Button.titleLabel!.layer.opacity = 0.0
-        d10Button.titleLabel!.layer.opacity = 0.0
-        d12Button.titleLabel!.layer.opacity = 0.0
-        d20Button.titleLabel!.layer.opacity = 0.0
+        setupButtons()
 
     }
     
     var selectedDie = DieModel(name: "", range: 0...19)
     
     @IBAction func diceIsPressed(_ sender: UIButton) {
-
-        if sender.currentTitle == "D4" {
+        switch sender.tag {
             
+        case 0:
             selectedDie.name = "D4"
-            selectedDie.range = 1...4
+            selectedDie.range = 1...4;
             
-        } else if sender.currentTitle == "D6" {
-            
+        case 1:
             selectedDie.name = "D6"
-            selectedDie.range = 1...6
-        } else if sender.currentTitle == "D8" {
+            selectedDie.range = 1...6;
             
+        case 2:
             selectedDie.name = "D8"
-            selectedDie.range = 1...8
+            selectedDie.range = 1...8;
             
-        } else if sender.currentTitle == "D10" {
-            
+        case 3:
             selectedDie.name = "D10"
-            selectedDie.range = 1...10
+            selectedDie.range = 1...10;
             
-        } else if sender.currentTitle == "D12" {
-            
+        case 4:
             selectedDie.name = "D12"
-            selectedDie.range = 1...12
+            selectedDie.range = 1...12;
             
-        } else if sender.currentTitle == "D20" {
+        case 5:
+            selectedDie.name = "D20"
+            selectedDie.range = 1...20;
             
+        default:
             selectedDie.name = "D20"
             selectedDie.range = 1...20
         }
         
         performSegue(withIdentifier: "goToDie", sender: self)
     
+    }
+    
+    func setupButtons() {
+        for i in allButtons.indices {
+            allButtons[i].titleLabel!.layer.opacity = 0.0
+            allButtons[i].tag = i
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
