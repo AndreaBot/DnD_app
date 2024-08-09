@@ -51,6 +51,7 @@
 		6258D2F02C66BEB9000F202C /* DndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6258D2F22C66BEB9000F202C /* HomeScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTests.swift; sourceTree = "<group>"; };
 		6258D2FD2C66C30B000F202C /* uuu.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uuu.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6258D3092C66C60B000F202C /* DnD Roll.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "DnD Roll.xctestplan"; path = "DndTests/DnD Roll.xctestplan"; sourceTree = "<group>"; };
 		629377E529A19830003DD3F3 /* DnD Roll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DnD Roll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		629377E829A19830003DD3F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		629377EA29A19830003DD3F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		629377DC29A19830003DD3F3 = {
 			isa = PBXGroup;
 			children = (
+				6258D3092C66C60B000F202C /* DnD Roll.xctestplan */,
 				629377E729A19830003DD3F3 /* aa */,
 				6258D2F12C66BEB9000F202C /* DndTests */,
 				629377E629A19830003DD3F3 /* Products */,

@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "BD494AA9-D364-44B6-9D8D-A869E80DA6FC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:DnD Roll.xcodeproj",
+      "identifier" : "629377E429A19830003DD3F3",
+      "name" : "DnD Roll"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:DnD Roll.xcodeproj",
+        "identifier" : "6258D2EF2C66BEB9000F202C",
+        "name" : "DndTests"
+      }
+    }
+  ],
+  "version" : 1
+}
