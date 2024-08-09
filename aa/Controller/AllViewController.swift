@@ -21,7 +21,7 @@ class AllViewController: UIViewController {
     
     var image = ""
     var diceRange = 0...19
-
+    
     func goodOutcome() {
         let victory = UIAlertController(title: "TOP ROLL!", message: "...you lucky bugger...", preferredStyle: .alert)
         victory.addAction(UIAlertAction(title: "OK", style: .default))
@@ -48,19 +48,16 @@ class AllViewController: UIViewController {
     
     
     @IBAction func rollDie(_ sender: UIButton) {
-        
         vibration.notificationOccurred(.success)
-        sender.alpha = 0.5
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [self] in
-            sender.alpha = 1.0
-            
-            resultImage.image = newDie.genRandom(useRange: diceRange)
-            
-            if resultImage.image == newDie.results[0] {
-                badOutcome()
-            } else if resultImage.image == newDie.results[diceRange.last!] {
-                goodOutcome()
-            }
+        
+        let result = Int.random(in: diceRange)
+        resultImage.image = UIImage(systemName: "\(result).circle")?
+            .withTintColor(.white, renderingMode: .alwaysOriginal)
+        
+        if result == diceRange.lowerBound {
+            badOutcome()
+        } else if result == diceRange.upperBound  {
+            goodOutcome()
         }
     }
 }

@@ -38,32 +38,32 @@ class homeViewController: UIViewController {
         if sender.currentTitle == "D4" {
             
             image = "D4"
-            diceRange = 0...3
+            diceRange = 1...4
             
         } else if sender.currentTitle == "D6" {
             
             image = "D6"
-            diceRange = 0...5
+            diceRange = 1...6
         }
         else if sender.currentTitle == "D8" {
             
             image = "D8"
-            diceRange = 0...7
+            diceRange = 1...8
             
         }else if sender.currentTitle == "D10" {
             
             image = "D10"
-            diceRange = 0...9
+            diceRange = 1...10
             
         }else if sender.currentTitle == "D12" {
             
             image = "D12"
-            diceRange = 0...11
+            diceRange = 1...12
             
         }else if sender.currentTitle == "D20" {
             
             image = "D20"
-            diceRange = 0...19
+            diceRange = 1...20
         }
         
         performSegue(withIdentifier: "goToDie", sender: self)
