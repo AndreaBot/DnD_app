@@ -15,20 +15,19 @@ class AllViewController: UIViewController {
     @IBOutlet weak var resultImage: UIImageView!
     @IBOutlet weak var dieImage: UIImageView!
     @IBOutlet weak var rollButton: UIButton!
+
     
-    var image = ""
-    var diceRange = 0...19
-    
-    
+    var selectedDie = DieModel(name: "", range: 0...19)
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = image
-        dieImage.image = UIImage(named: image)
+        title = selectedDie.name
+        dieImage.image = UIImage(named: selectedDie.name)
         rollButton.layer.cornerRadius = 25
     }
     
     
     @IBAction func rollDie(_ sender: UIButton) {
-        dndMaster.roll(vc: self, imageView: resultImage, diceRange: diceRange)
+        dndMaster.roll(vc: self, imageView: resultImage, diceRange: selectedDie.range)
     }
 }

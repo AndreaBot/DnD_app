@@ -29,41 +29,38 @@ class homeViewController: UIViewController {
 
     }
     
-    var image = ""
-    
-    var diceRange = 0...19
+    var selectedDie = DieModel(name: "", range: 0...19)
     
     @IBAction func diceIsPressed(_ sender: UIButton) {
-        
+
         if sender.currentTitle == "D4" {
             
-            image = "D4"
-            diceRange = 1...4
+            selectedDie.name = "D4"
+            selectedDie.range = 1...4
             
         } else if sender.currentTitle == "D6" {
             
-            image = "D6"
-            diceRange = 1...6
-        }
-        else if sender.currentTitle == "D8" {
+            selectedDie.name = "D6"
+            selectedDie.range = 1...6
+        } else if sender.currentTitle == "D8" {
             
-            image = "D8"
-            diceRange = 1...8
+            selectedDie.name = "D8"
+            selectedDie.range = 1...8
             
-        }else if sender.currentTitle == "D10" {
+        } else if sender.currentTitle == "D10" {
             
-            image = "D10"
-            diceRange = 1...10
+            selectedDie.name = "D10"
+            selectedDie.range = 1...10
             
-        }else if sender.currentTitle == "D12" {
+        } else if sender.currentTitle == "D12" {
             
-            image = "D12"
-            diceRange = 1...12
+            selectedDie.name = "D12"
+            selectedDie.range = 1...12
             
-        }else if sender.currentTitle == "D20" {
+        } else if sender.currentTitle == "D20" {
             
-            image = "D20"
-            diceRange = 1...20
+            selectedDie.name = "D20"
+            selectedDie.range = 1...20
         }
         
         performSegue(withIdentifier: "goToDie", sender: self)
@@ -72,10 +69,9 @@ class homeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToDie" {
-            let destinationVC = segue.destination as? AllViewController
-            destinationVC?.image = image
-            destinationVC?.diceRange = diceRange
-            
+            if let destinationVC = segue.destination as? AllViewController {
+                destinationVC.selectedDie = selectedDie
+            }
         }
     }
 }
