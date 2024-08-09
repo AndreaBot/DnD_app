@@ -5,7 +5,7 @@
 //  Created by Andrea Bottino on 09/08/2024.
 //
 
-import UIKit
+import Foundation
 
 struct HomeScreenModel {
     
@@ -41,13 +41,6 @@ struct HomeScreenModel {
         default:
             selectedDie.name = "D20"
             selectedDie.range = 1...20
-        }
-    }
-    
-    func setupButtons(buttons: [UIButton]) {
-        for i in buttons.indices {
-            buttons[i].titleLabel!.layer.opacity = 0.0
-            buttons[i].tag = i
         }
     }
 }
